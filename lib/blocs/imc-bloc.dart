@@ -1,8 +1,8 @@
 import 'package:flutter_masked_text/flutter_masked_text.dart';
 
 class ImcBloc {
-  var heightCtrl = new MaskedTextController(mask: '800');
-  var weightCtrl = new MaskedTextController(mask: '800');
+  var heightCtrl = new MaskedTextController(mask: '000');
+  var weightCtrl = new MaskedTextController(mask: '000');
   var result = "Preencha os dados para calcular o IMC";
 
   calcule() {
@@ -18,14 +18,10 @@ class ImcBloc {
       result = "Levemente acima do peso(${imc.toStringAsPrecision(2)})";
     } else if (imc >= 24.9 && imc <= 34.9) {
       result = "Obesidade Grau I (${imc.toStringAsPrecision(2)})";
-    }else if(imc >= 34.9 && imc <= 39.9){
+    } else if (imc >= 34.9 && imc <= 39.9) {
       result = "Obesidade Grau II (${imc.toStringAsPrecision(2)})";
-
-    }else if(imc >= 40){
+    } else if (imc >= 40) {
       result = "Obesidade Grau III (${imc.toStringAsPrecision(2)})";
-
     }
-
-
   }
 }
