@@ -8,7 +8,6 @@ class MyCupertinoApp extends StatelessWidget {
       title: "IMC",
       debugShowCheckedModeBanner: false,
       home: HomePage(),
-      
     );
   }
 }
